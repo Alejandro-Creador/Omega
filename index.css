@@ -201,22 +201,26 @@
 
                 /* seccion buscador mobile */
 .buscadormmobile {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
 }
 
 .inputbuscador_headermobile {
-    width: 100%;
+    width: 99.5%;
     height: 34px;
     position: relative;
-    padding-left: 60px;
+    padding-left: 75px;
+    margin: 5px;
+    justify-self: center;
 }
 
 .labelbuscador_headermobile {
     position: absolute;
     border: none;
-    margin: 5px;
+    margin-left: 10px;
+    font-size: 20px;
 }
 
 .butonlupa_headermobile {
@@ -226,7 +230,39 @@
     border: 0px;
     padding: 0px;
     justify-self: end;
+    margin-right: 10px;
 }
 
 
-/******************************************* body ***************************/
+/******************************************* Main***************************/
+/* section slaider */
+.img1 {
+    width: 100%;
+    height: 330px;
+    
+}
+
+.img1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.departamentos {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    place-items: center;
+   
+}
+
+.dep {
+    width: 90%;
+    height: 150px;
+    border: 1px solid black;
+
+}
+
+
+
