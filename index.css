@@ -43,10 +43,15 @@
 
 .inputbuscador_header {
     width: 100%;
-    height: 34px;
+    height: 45px;
     position: relative;
     border-radius: 10px;
     padding-left: 62px;
+    border: none;
+}
+
+.inputbuscador_header:focus-visible {
+    outline: 2px solid #FF601D ;
 }
 
 .labelbuscador_header {
@@ -66,8 +71,8 @@
 }
 
 .butonlupa_header {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     padding: 0px;
     border: 0px;
@@ -85,6 +90,8 @@
 .lupaimagen_header {
     width: 100%;
     height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 
@@ -103,7 +110,7 @@
 
 .section_user a {
     text-decoration: none;
-    color: #D4FF00;
+    color: white;
 }
 
 .contenedorcarrito {
@@ -123,7 +130,7 @@
 /******************************************* Barra de navegacion 2 ***************************/
 
 .barranavegacion2 {
-    background: #B2AEAE;
+    background: #767171;
 }
 .barranavegacion2 ul {
     display: flex;
@@ -135,13 +142,53 @@
 }
 
 .barranavegacion2 ul li {
-    margin-right: 20px;
+    margin-right: 40px;
     font-weight: bold;
 }
 
 .barranavegacion2 ul li a {
     text-decoration: none;
-    color: #FF601D;
+    color: #D4FF00;
+    
 }
+/* programacion para android */
+
+.headermobile {
+    display: none;
+}
+
+.barradenavegacionMobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #545050;
+    
+}
+
+.mobielogo {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+
+
+
+.mobilemenu {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+@media (max-width: 1156px) {
+    .header {
+        display: none;
+    }
+
+    .headermobile {
+        display: block;
+    }
+
+    
+}
+
 
 /******************************************* body ***************************/
