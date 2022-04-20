@@ -247,7 +247,7 @@
     width: 400%;
     height: 400px;
     position: relative;
-    animation: cambio 20s infinite;
+    animation: cambio 20s infinite alternate;
 }
 
 .sliderSection {
@@ -307,6 +307,6 @@
     50% {margin-left:-200%;}
     70% {margin-left:-200%;}
 
-    75% {margin-left:-200%;}
-    100% {margin-left:-200%;}
+    75% {margin-left:-300%;}
+    100% {margin-left:-300%;}
 }
