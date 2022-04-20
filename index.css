@@ -173,6 +173,7 @@
 .mobilelogo img {
     width: 250px;
     height: 56px;
+    object-fit: cover;
 }
 
 
@@ -236,43 +237,76 @@
 
 /******************************************* Main***************************/
 /* section slaider */
-.img1 {
-    display: flex;
-    width: 100%;
-    height: 300px;
-    align-items: flex-end;
-    justify-content: center;
+.sliderContainer {
+    width:100%;
+    overflow: hidden;
 }
 
-.img1 img {
+.slider {
+    display: flex;
+    width: 400%;
+    height: 400px;
     position: relative;
-    width: 100%;
-    height: 100%;
+    animation: cambio 20s infinite;
 }
 
-.departamentos {
-    width: 95%;
+.sliderSection {
+    width: 100%;
+    
+}
+
+.sliderfondoimage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containerBotones {
+    width: 25%;
+    display: grid;
+    grid-template-columns: 30px 30px;
+    justify-content: space-between;
     position: absolute;
-    display: flex;
-    height: auto;
-    justify-items: center ;
-    overflow: hidden;
+    align-self: center;
+    justify-self: center;
+
+    
 }
 
-.dep {
-    width: 600px;
-    height: 150px;
+.sliderbtnRigth {
     background: white;
-    overflow: hidden;
-    border-radius: 10px;
-    text-align: center;
-    margin: 20px;
+    text-align: start;
+    border-radius: 50px;
+    justify-self: center;
+    padding: 20px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    cursor: pointer;
 }
 
-.dep img {
-    width: 100%;
-    height: 100%;
+.sliderbtnleft {
+    background: papayawhip;
+    text-align: end;
+    border-radius: 50px;
+    justify-self: center;
+    padding: 20px;
+    margin-right: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    cursor: pointer;
 }
 
+@keyframes cambio {
+    0% {margin-left:0;}
+    20% {margin-left: 0;}
 
+    25% {margin-left:-100%;}
+    45% {margin-left:-100%;}
 
+    50% {margin-left:-200%;}
+    70% {margin-left:-200%;}
+
+    75% {margin-left:-200%;}
+    100% {margin-left:-200%;}
+}
