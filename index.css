@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+/********************************************** DESCKTOP ***************************************/
 /******************************************* Barra de navegacion 1 ***************************/
         /* Contenedor de header */
 .header {
@@ -151,7 +152,65 @@
     color: #D4FF00;
     
 }
-/* programacion para android */
+/********************************************Section departamentos*****************************************/
+.departamentos {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    
+}
+
+/*calzado*/
+.containerCalzado {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 25px 1fr 20px;
+    border-bottom: 2px solid #545050;
+}
+
+.items {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    justify-content: center;
+}
+
+.item {
+    background: #FF601D;
+    
+}
+
+.itemImage {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/*Electronicos*/
+.containerElectronicos {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 25px 1fr 20px;
+    margin-top: 20px;
+    border-bottom: 2px solid #545050;
+}
+
+/* Mujer */
+.containerMujer {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 25px 1fr 20px;
+    margin-top: 20px;
+    border-bottom: 2px solid #545050;
+}
+
+
+
+/********************************************** MOBILE ***************************************/
 
 .headermobile {
     display: none;
@@ -184,9 +243,7 @@
     justify-content: end;
 }
 
-                /* seccion buscador mobile */
-
-            
+/* seccion buscador mobile */
 
 @media (max-width: 1156px) {
     .header {
@@ -200,7 +257,7 @@
     
 }
 
-                /* seccion buscador mobile */
+ /* seccion buscador mobile */
 .buscadormmobile {
     width: 100%;
     display: grid;
@@ -222,6 +279,10 @@
     border: none;
     margin-left: 10px;
     font-size: 20px;
+    background: white;
+}
+.labelbuscador_headermobile:focus-visible {
+    outline: none;
 }
 
 .butonlupa_headermobile {
@@ -235,78 +296,5 @@
 }
 
 
-/******************************************* Main***************************/
-/* section slaider */
-.sliderContainer {
-    width:100%;
-    overflow: hidden;
-}
 
-.slider {
-    display: flex;
-    width: 400%;
-    height: 400px;
-    position: relative;
-    animation: cambio 20s infinite alternate;
-}
 
-.sliderSection {
-    width: 100%;
-    
-}
-
-.sliderfondoimage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.containerBotones {
-    width: 25%;
-    display: grid;
-    grid-template-columns: 30px 30px;
-    justify-content: space-between;
-    position: absolute;
-    align-self: center;
-    justify-self: center;
-
-    
-}
-
-.sliderbtnRigth {
-    background: white;
-    text-align: start;
-    border-radius: 50px;
-    justify-self: center;
-    padding: 20px;
-    margin-left: 50px;
-    font-weight: bold;
-    font-family: monospace;
-    cursor: pointer;
-}
-
-.sliderbtnleft {
-    background: papayawhip;
-    text-align: end;
-    border-radius: 50px;
-    justify-self: center;
-    padding: 20px;
-    margin-right: 50px;
-    font-weight: bold;
-    font-family: monospace;
-    cursor: pointer;
-}
-
-@keyframes cambio {
-    0% {margin-left:0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left:-100%;}
-    45% {margin-left:-100%;}
-
-    50% {margin-left:-200%;}
-    70% {margin-left:-200%;}
-
-    75% {margin-left:-300%;}
-    100% {margin-left:-300%;}
-}
