@@ -2,17 +2,22 @@
     margin: 0px;
     box-sizing: border-box;
 }
+body {
+    width: 100%;
+    height: 100%;
+}
 
 /********************************************** DESCKTOP ***************************************/
 /******************************************* Barra de navegacion 1 ***************************/
         /* Contenedor de header */
 .header {
     width: 100%;
+    height: auto;
 }
             /* contenedor barra de navecion 1 */
 .barranavegacion1 {
     width: 100%;
-    height: 90px;
+    height: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
@@ -131,7 +136,12 @@
 /******************************************* Barra de navegacion 2 ***************************/
 
 .barranavegacion2 {
+    display: grid;
+    width: 100%;
+    height: 30px;
     background: #767171;
+    grid-template-columns: 1fr;
+    place-content: center;
 }
 .barranavegacion2 ul {
     display: flex;
@@ -152,98 +162,55 @@
     color: #D4FF00;
     
 }
-/********************************************Section departamentos*****************************************/
-.departamentos {
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
-    
-}
 
-/*calzado*/
-.containerCalzado {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-rows: 25px 1fr 20px;
-    border-bottom: 2px solid #545050;
-}
-
-.items {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
-    justify-content: center;
-}
-
-.item {
-    background: #FF601D;
-    
-}
-
-.itemImage {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-
-/*Electronicos*/
-.containerElectronicos {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-rows: 25px 1fr 20px;
-    margin-top: 20px;
-    border-bottom: 2px solid #545050;
-}
-
-/* Mujer */
-.containerMujer {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-rows: 25px 1fr 20px;
-    margin-top: 20px;
-    border-bottom: 2px solid #545050;
-}
-
-
-
-/********************************************** MOBILE ***************************************/
+/*******************************************BARRA DE NAVEGACION MOBILE***************************************/
 
 .headermobile {
     display: none;
+    width: 100%;
+    height: auto;
 }
 
 .barradenavegacionMobile {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: #545050;
+    height: 55px;
     
 }
 
 .mobilelogo {
+    width: 180px;
+    height: 40px;
     display: flex;
-    width: 100%;
-    justify-content: start;
+    margin-left: 20px;
+    align-self: center;
 }
 
 .mobilelogo img {
-    width: 250px;
-    height: 56px;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 
 
 .mobilemenu {
+    width: 50px;
+    height: 50px;
     display: flex;
-    width: 100%;
-    justify-content: end;
+    margin-right: 0px;
+    align-self: center;
+    justify-self: end;
+    margin-right: 20px;
+
 }
 
-/* seccion buscador mobile */
+.mobilemenu img {
+    width: 100%;
+    height: 100%;
+}
+
+/****************seccion buscador mobile***************************************/
 
 @media (max-width: 1156px) {
     .header {
@@ -253,12 +220,11 @@
     .headermobile {
         display: block;
     }
-
-    
 }
 
- /* seccion buscador mobile */
+/************************** seccion buscador mobile ***************************/
 .buscadormmobile {
+    margin-top: 5px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -269,25 +235,23 @@
     width: 99.5%;
     height: 34px;
     position: relative;
-    padding-left: 75px;
-    margin: 5px;
     justify-self: center;
+    margin-right: 2px;
+    margin-left: 2px;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    
 }
 
-.labelbuscador_headermobile {
-    position: absolute;
+.inputbuscador_headermobile:focus-visible {
+    outline: 2px solid #FF601D ;
     border: none;
-    margin-left: 10px;
-    font-size: 20px;
-    background: white;
-}
-.labelbuscador_headermobile:focus-visible {
-    outline: none;
 }
 
 .butonlupa_headermobile {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     position: absolute;
     border: 0px;
     padding: 0px;
@@ -295,6 +259,75 @@
     margin-right: 10px;
 }
 
+.lupaimagen_headermobile {
+    width: 100%;
+    height: 100%;
+}
+/**************************************************** */
+
+/* *********************promociones y departamentos *************************** */
+
+.containerpromocionesDepartamentos {
+    margin-top: 5px;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+}
+
+.containerPrincippal {
+    display: grid;
+    width: 95%;
+    height: auto;
+    background: #D4FF00;
+}
+
+.conteainerslider {
+    width: 100%;
+    height: 230px;
+    background: rgb(167, 133, 79);
+    margin-bottom: 5px;
+}
+
+.containerDepartamentos {
+    display: grid;
+    width: 100%;
+    height: auto; 
+}
+
+.containerDep {
+    margin-bottom: 5px;
+}
+
+.containerCalzado {
+    width: 100%;
+    height: 185px;
+    background: brown;
+
+}
+
+.containerElectronicos {
+    width: 100%;
+    height: 185px;
+    background: brown;
+}
+
+.containerParamujer {
+    width: 100%;
+    height: 185px;
+    background: brown;
+}
+
+.containerParahombre {
+    width: 100%;
+    height: 185px;
+    background: brown;
+}
 
 
-
+/* *******************footer******************************* */
+.footer {
+    width: 100%;
+    height: 50px;
+    background: black;
+}
