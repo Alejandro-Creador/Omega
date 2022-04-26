@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 body {
     width: 100%;
@@ -289,6 +290,8 @@ body {
     position: relative;
     margin-bottom: 5px;
     overflow: hidden;
+    background: #d4d2d2;
+    border-radius: 10px;
 }
 /* slider promociones  */
 .containerSliderPromociones {
@@ -375,6 +378,13 @@ body {
     margin-bottom: 5px;
 }
 
+.linkdepartamentos {
+    text-decoration: none;
+    margin-left: 10px;
+    align-self: center;
+    font-size: 10px;
+}
+
 
 /* container Calzado */
 .containerCalzado {
@@ -387,7 +397,9 @@ body {
 }
 
 .tituloCalzado {
-
+    font-size: 15px;
+    margin-left: 10px;
+    align-self: center;
 }
 
 .cardsCalzado {
@@ -401,6 +413,8 @@ body {
     width: 100%;
     height: 100%;
     background: #470420;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .imageCalzado {
@@ -422,7 +436,9 @@ body {
 }
 
 .tituloElectronicos {
-
+    font-size: 15px;
+    margin-left: 10px;
+    align-self: center;
 }
 
 .cardsElectronicos {
@@ -436,6 +452,8 @@ body {
     width: 100%;
     height: 100%;
     background: #470420;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .imageElectronicos {
@@ -456,7 +474,9 @@ body {
 }
 
 .tituloMujer {
-
+    font-size: 15px;
+    margin-left: 10px;
+    align-self: center;
 }
 
 .cardsMujer {
@@ -470,6 +490,8 @@ body {
     width: 100%;
     height: 100%;
     background: #470420;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .imageMujer {
@@ -487,11 +509,13 @@ body {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    background: #d4d2d2;
+    background: #d2d4d2;
 }
 
 .tituloHombre {
-
+    font-size: 15px;
+    margin-left: 10px;
+    align-self: center;
 }
 
 .cardsHombre {
@@ -505,6 +529,8 @@ body {
     width: 100%;
     height: 100%;
     background: #470420;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .imageHombre {
@@ -512,11 +538,18 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
 /* ********************************************************* */
 
 /* *******************footer******************************* */
 .footer {
+    display: grid;
     width: 100%;
     height: 50px;
-    background: black;
+    place-content: center;
+    border-radius: 2px;
+}
+.footer p {
+    place-self: center;
+    font-weight: bold;
 }
