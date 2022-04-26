@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background: #545050;
+    place-content: center;
+}
+.menuMobile {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    width: 250px;
+    height: 500px;
+}
+
+.containerLOGO {
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+.imageLogo {
+    justify-self: center;
+}
+
+.conatinerItems {
+    width: 100%;
+    height: 100%;
+    display: grid;
+   
+    list-style: none;
+
+}
+
+.itemMenu {
+
+}
+
+.linkItemMenu {
+    text-decoration: none;
+    color: white;
+}
+
+.linkItemMenu:hover {
+    color: #FF601D;
+}
