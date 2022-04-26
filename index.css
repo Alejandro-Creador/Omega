@@ -286,14 +286,14 @@ body {
 .conteainerslider {
     display: grid;
     width: 100%;
-    height: 230px;
+    height: 300px;
     background: rgb(167, 133, 79);
     position: relative;
     margin-bottom: 5px;
     overflow: hidden;
 }
-
-.sliderPromociones {
+/* slider promociones  */
+.containerSliderPromociones {
     width: 100%;
     height: 80%;
     background: #04471b;
@@ -301,6 +301,43 @@ body {
     z-index: 1;
 }
 
+.cardsSliderPromociones {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    padding: 0px;
+    animation: cambio 30s infinite alternate;
+    animation-timing-function: ease-in-out;
+    
+}
+
+.itemSliderPromociones {
+    width: 100%;
+    list-style: none;
+}
+
+.imagenSliderPromociones {
+    width: 100%;
+    height: 100%;
+    
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+/* ******************************************************  */
+
+/* slider departamentos */
 .sliderDepartamentos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -315,10 +352,17 @@ body {
 
 .itemSliderDepartamentos {
     width: 100%;
-    height: 83px;
+    height: 120px;
     background: darkgoldenrod;
     z-index: 2;
+    border-radius: 10px;
+    overflow: hidden;
 } 
+
+.imagenSliderDepartamentos {
+    width: 100%;
+    height: 100%;
+}
 /* ************************************* */
 
 .containerDepartamentos {
