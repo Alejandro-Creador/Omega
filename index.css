@@ -282,12 +282,44 @@ body {
     background: #D4FF00;
 }
 
+/* slider */
 .conteainerslider {
+    display: grid;
     width: 100%;
     height: 230px;
     background: rgb(167, 133, 79);
+    position: relative;
     margin-bottom: 5px;
+    overflow: hidden;
 }
+
+.sliderPromociones {
+    width: 100%;
+    height: 80%;
+    background: #04471b;
+    position: absolute;
+    z-index: 1;
+}
+
+.sliderDepartamentos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 120%;
+    height: 50px;
+    background: #13f562;
+    position: absolute;
+    align-self: center;
+    column-gap: 14px;
+    margin-top: 110px;
+}
+
+.itemSliderDepartamentos {
+    width: 100%;
+    height: 83px;
+    background: darkgoldenrod;
+    z-index: 2;
+} 
+/* ************************************* */
 
 .containerDepartamentos {
     display: grid;
