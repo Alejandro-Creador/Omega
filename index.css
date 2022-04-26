@@ -236,8 +236,8 @@ body {
     height: 34px;
     position: relative;
     justify-self: center;
-    margin-right: 2px;
-    margin-left: 2px;
+    margin-right: 5px;
+    margin-left: 5px;
     border: 1px solid black;
     padding: 10px;
     font-size: 20px;
@@ -319,6 +319,7 @@ body {
 .imagenSliderPromociones {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     
 }
 
@@ -362,6 +363,7 @@ body {
 .imagenSliderDepartamentos {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 /* ************************************* */
 

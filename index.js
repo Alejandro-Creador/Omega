@@ -1,0 +1,1 @@
+alert("Usted esta viendo la (version 1.0)Beta del la pagina web de Ventas de Consumo Masivo si tiene alguna idea para implementar o cambio que pueda ser para mejora no dude en contactarnos: jose12345alejandromorales@gmail.com")
