@@ -175,7 +175,7 @@ body {
 .barradenavegacionMobile {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: #545050;
+    background: #000000d3;
     height: 55px;
     
 }
