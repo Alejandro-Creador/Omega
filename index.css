@@ -23,7 +23,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     justify-content: space-between;
-    background: #767171;
+    background: #000000d3;
 }       
 
                 
@@ -145,7 +145,7 @@ body {
     background: #767171;
     grid-template-columns: 1fr;
     place-content: center;
-    border-top: 1px solid #9b9292;
+    border-top: 2px solid #9b9292;
 }
 .barranavegacion2 ul {
     display: flex;
