@@ -283,9 +283,21 @@ body {
 }
 /* *************************************************************************** */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* *********************promociones y departamentos Descktop*************************** */
 .containerpromocionesDepartamentos {
-   
     display: grid;
     width: 100%;
     height: 100%;
@@ -299,131 +311,106 @@ body {
 }
 
 /* slider */
-    .conteainerslider {
-        display: grid;
-        width: 100%;
-        height:700px;
-        position: relative;
-        margin-bottom: 5px;
-        overflow: hidden;
-        background: #d4d2d2;
-    }
+.conteainerslider {
+    display: grid;
+    width: 100%;
+    height:900px;
+    position: relative;
+    margin-bottom: 5px;
+    overflow: hidden;
+    background: #d4d2d2;
+}
 
-    /* slider promociones  */
-    .containerSliderPromociones {
-        width: 100%;
-        height: 90%;
-        background: #04471b;
-        position: absolute;
-        z-index: 1;
-    }
+/* slider promociones  */
+.containerSliderPromociones {
+    width: 100%;
+    height: 80%;
+    background: #04471b;
+    position: absolute;
+    z-index: 1;
+}
 
-    .cardsSliderPromociones {
-        display: flex;
-        width: 400%;
-        height: 100%;
-        padding: 0px;
-        animation: cambio 30s infinite alternate;
-        animation-timing-function: ease-in-out;
-        
-    }
+.cardsSliderPromociones {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    padding: 0px;
+    animation: cambio 30s infinite alternate;
+    animation-timing-function: ease-in-out;
+    
+}
 
-    .itemSliderPromociones {
-        width: 100%;
-        list-style: none;
-    }
+.itemSliderPromociones {
+    width: 100%;
+    list-style: none;
+}
+
+.imagenSliderPromociones {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     
-    .imagenSliderPromociones {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        
-    }
+}
     
-    @keyframes cambio {
-        0% {margin-left: 0;}
-        20% {margin-left: 0;}
-    
-        25% {margin-left: -100%;}
-        45% {margin-left: -100%;}
-    
-        50% {margin-left: -200%;}
-        70% {margin-left: -200%;}
-    
-        75% {margin-left: -300%;}
-        100% {margin-left: -300%;}
-    }
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
 /* *********************promociones y departamentos Mobile*************************** */
 
-@media (max-width: 1214px) {
-    .containerpromocionesDepartamentos {
-        margin-top: 5px;
-        display: grid;
-        width: 100%;
-        height: 100%;
-        place-items: center;
-    }
-    
+@media (min-width: 900px) and (max-width:1214px) {
     .containerPrincippal {
+        margin-top: 5px;
         display: grid;
         width: 95%;
         height: auto;
+        
     }
     
-    /* slider */
     .conteainerslider {
+        border-radius: 10px;
+        height: 700px;
+    }
+    
+}
+
+@media (min-width: 585px) and (max-width:899px) {
+    .containerPrincippal {
+        margin-top: 5px;
         display: grid;
-        width: 100%;
+        width: 95%;
+        height: auto;
+        
+    }
+    
+    .conteainerslider {
+        border-radius: 10px;
+        height: 500px;
+    }
+    
+}
+
+@media (min-width: 270px) and (max-width:584px) {
+    .containerPrincippal {
+        margin-top: 5px;
+        display: grid;
+        width: 95%;
+        height: auto;
+        
+    }
+    
+    .conteainerslider {
+        border-radius: 10px;
         height: 400px;
-        position: relative;
-        margin-bottom: 5px;
-        overflow: hidden;
-        background: #d4d2d2;
-        border-radius: 3px;
-    }
-    /* slider promociones  */
-    .containerSliderPromociones {
-        width: 100%;
-        height: 80%;
-        background: #04471b;
-        position: absolute;
-        z-index: 1;
-    }
-    
-    .cardsSliderPromociones {
-        display: flex;
-        width: 400%;
-        height: 100%;
-        padding: 0px;
-        animation: cambio 30s infinite alternate;
-        animation-timing-function: ease-in-out;
-        
-    }
-    
-    .itemSliderPromociones {
-        width: 100%;
-        list-style: none;
-    }
-    
-    .imagenSliderPromociones {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        
-    }
-    
-    @keyframes cambio {
-        0% {margin-left: 0;}
-        20% {margin-left: 0;}
-    
-        25% {margin-left: -100%;}
-        45% {margin-left: -100%;}
-    
-        50% {margin-left: -200%;}
-        70% {margin-left: -200%;}
-    
-        75% {margin-left: -300%;}
-        100% {margin-left: -300%;}
     }
     
 }
@@ -432,28 +419,40 @@ body {
 /* *****************************slider Departamentos Descktop******************************* */
 /* slider departamentos */
 .containerSliderDepartamentos {
+    width: 100%;
+    height:30%;
+    overflow: auto;
+    position: absolute;
+    align-self: end;
+}
+
+.containerSliderDepartamentos::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+}
+
+.cardsSliderDepartamentos {
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    width: 120%;
-    height:300px;
-    position: absolute;
-    align-self: flex-end;
-    column-gap: 14px;
-    
+    grid-template-rows: 98%;
+    gap: 10px;
 }
 
 .itemSliderDepartamentos {
     width: 100%;
-    height: 300px;
-    z-index: 2;
-    border-radius: 3px;
-    overflow: hidden;
+    height: 100%;
+    z-index: 1;
+    border-radius: 5px;
 } 
 
 .imagenSliderDepartamentos {
-    width: 100%;
+    background: yellow;
+    width:100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 /* ************************************* */
 
@@ -461,33 +460,39 @@ body {
 @media (max-width: 1214px) {
     /* slider departamentos */
     .containerSliderDepartamentos {
-        width: 100%;
-        height: 120px;
-        overflow: auto;
-    }
+    width: 100%;
+    height:30%;
+    overflow: auto;
+    position: absolute;
+    align-self: end;
+}
 
-    .containerSliderDepartamentos::-webkit-scrollbar {
-        display: none;
-    }
+.containerSliderDepartamentos::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+}
 
-    .cardsSliderDepartamentos {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 120px;
-        width: 1000%;
-        gap: 15px;
-    }
+.cardsSliderDepartamentos {
+    width: 120%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 98%;
+    gap: 10px;
+}
 
-    .itemSliderDepartamentos {
-        width: 100%;
-        height: 100%;
-    } 
+.itemSliderDepartamentos {
+    width: 100%;
+    height: 98%;
+    z-index: 1;
+} 
 
-    .imagenSliderDepartamentos {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.imagenSliderDepartamentos {
+    background: yellow;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
     /* ************************************* */
 }
 
