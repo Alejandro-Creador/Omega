@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+}
+ 
+/* ***************************************************** */
+
+.containerLogin {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    width: 400px;
+    height: 100%;
+}
+
+.containerLogo {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imageLogo {
+    width: 300px;
+    height: 100px;
+}
+
+.formCard {
+    height: 300px;
+    display: grid;
+    justify-content: space-between;
+    border: 1px solid rgb(180, 173, 173);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.logintext {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+}
+
+.formLogin label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formLogin input {
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.formLogin .button {
+    font-weight: bold;
+    background:  #FF601D;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.formLogin .button:hover {
+    background: #ff7f48;
+    cursor: pointer;
+}
+
+.politicofprivacity {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.ayuda {
+    font-size: 13px;
+}
+
+.registerCard {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.registerCard p {
+    margin-top: 50px;
+    font-size: 13px;
+}
+
+.registerCard a {
+    color: black;
+    text-align: center;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    background:  #aca29d;
+    border: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    font-size: 13px;
+}
+
+.registerCard button:hover {
+    background: #c9c1be;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    align-items: end;
+}
+
+.footerCard {
+    width: 400px;
+    border-top: 1px solid #e2d7d1;
+    align-self: end;
+}
+
+.footerCard p {
+    text-align: center;
+}

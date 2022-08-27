@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Alejandro-Creador/Omega/issues"
   },
-  "homepage": "https://github.com/Alejandro-Creador/Omega#readme"
+  "homepage": "https://github.com/Alejandro-Creador/Omega#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mariadb": "^3.0.1",
+    "nodemon": "^2.0.19"
+  }
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">       
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/loginPasword.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <main class="containerLogin">
+        <figure class="containerLogo">
+            <a class="linkLogo" href="/"><img class="imageLogo" src="../log/logo.svg" alt="logotipoShopiestore"></a>
+        </figure>
+    
+
+        <section class="formCard">
+            <p class="logintext">Inicia Sesion</p>
+
+            <form class="formLogin">
+                <label for="passwordLogin">Ingresa Tu Contraseña</label>
+                <input type="password" id="passwordLogin" required>
+                <button type="submit" onclick="validarPassword()">Entrar</button>
+            </form>
+            <a href="#" class="contraseñaOlvidada">¿Has olvidado la Contraseña?</a>
+        </section>
+        <script src="./loginPasword.js"></script>
+    </main>
+    <footer class="footer">
+        <div class="footerCard">
+            <p>&copy;2021-2022 Shopistore.com</p>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
